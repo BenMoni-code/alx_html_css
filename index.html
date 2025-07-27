@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Moni | Portfolio</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben Moni | Portfolio</title>
+  <link href="base.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    /* Quick demo CSS (you can move to styles.css) */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background: #eee;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      flex: 1;
+    }
+    article {
+      flex: 3;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    aside {
+      flex: 1;
+      padding: 10px;
+      background: #ddd;
+    }
+  </style>
 </head>
-<body>
+<body class="works_on_smartphone">
 
-  <!-- Header with navigation -->
+  <!-- Header -->
   <header>
     <ul>
+      <li class="logo">⚡</li>
       <li><a href="index.html">Home</a></li>
       <li><a href="tweets.html">Tweets</a></li>
     </ul>
   </header>
 
-  <!-- Main content area -->
+  <!-- Main layout with article and aside -->
   <main>
+    <!-- Main content -->
     <article>
       <h1>My name is Ben Moni</h1>
       <p>What an exciting experience! Technology has significantly transformed the way we live, work, and communicate...</p>
 
-      <h2>My name is Ben Moni</h2>
-      <p>What an exciting experience! Technology has significantly transformed the way we live, work, and communicate...</p>
-
-      <h1>My name is Ben Moni</h1>
-      <p>What an exciting experience! Technology has significantly transformed the way we live, work, and communicate...</p>
-
-      <h3>My name is Ben Moni</h3>
-      <p>What an exciting experience! Technology has significantly transformed the way we live, work, and communicate...</p>
-
-      <h2>My name is Ben Moni</h2>
-      <p>What an exciting experience! Technology has significantly transformed the way we live, work, and communicate...</p>
-
-      <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="alx image" width="30" height="30">
+      <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="alx image" width="30" height="30" />
 
       <!-- Embedded tweet -->
       <blockquote class="twitter-tweet">
@@ -43,43 +62,26 @@
         <a href="https://twitter.com/jack/status/20">March 21, 2006</a>
       </blockquote>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <!-- Learners Table -->
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Country</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>John</td>
-      <td>25</td>
-      <td>USA</td>
-    </tr>
-    <tr>
-      <td>Emily</td>
-      <td>28</td>
-      <td>Canada</td>
-    </tr>
-    <tr>
-      <td>Michael</td>
-      <td>32</td>
-      <td>Australia</td>
-    </tr>
-    <tr>
-      <td>Sophia</td>
-      <td>21</td>
-      <td>UK</td>
-    </tr>
-  </tbody>
-</table>
 
+      <!-- Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Age</th><th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>John</td><td>25</td><td>USA</td></tr>
+          <tr><td>Emily</td><td>28</td><td>Canada</td></tr>
+          <tr><td>Michael</td><td>32</td><td>Australia</td></tr>
+          <tr><td>Sophia</td><td>21</td><td>UK</td></tr>
+        </tbody>
+      </table>
     </article>
 
+    <!-- Sidebar -->
     <aside>
-      <p>placeholder to add comment thread later</p>
+      <p>Placeholder to add comment thread later.</p>
     </aside>
   </main>
 
@@ -90,4 +92,3 @@
 
 </body>
 </html>
-git 
