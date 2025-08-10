@@ -1,0 +1,141 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 15px 20px;
+}
+header .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    color: #ff6565;
+}
+
+/* Hero */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero button {
+    padding: 10px 20px;
+    background: #ff6565;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.hero button:hover {
+    opacity: 0.9;
+}
+
+/* What We Do */
+#what-we-do {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.service {
+    flex: 1;
+    max-width: 300px;
+}
+.service i {
+    font-size: 40px;
+    color: #ff6565;
+}
+.service h3 {
+    margin: 10px 0;
+}
+
+/* Our Results */
+#our-results {
+    padding: 50px 20px;
+    background: #eee;
+    text-align: center;
+}
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.stat {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.stat h3 {
+    font-size: 24px;
+    color: #ff6565;
+}
+
+/* Contact Us */
+#contact-us {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #ff6565;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,42 @@
+/* Animation: bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Animation: fade in & scale */
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation when page loads */
+.what-we-do .item,
+.our-results .item {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background: #ff6565;
+  color: white;
+  border-radius: 8px;
+  animation: fadeScale 1s ease-out forwards;
+}
+
+/* Add bounce effect on hover */
+.what-we-do .item:hover,
+.our-results .item:hover {
+  animation: bounce 1s ease-in-out;
+}

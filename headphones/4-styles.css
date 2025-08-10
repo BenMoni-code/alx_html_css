@@ -1,0 +1,143 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+    background: url("images/headphones_hero_1.jpg") no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    background-color: #ff6565;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* WHAT WE DO */
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* OUR RESULTS */
+.our-results {
+    background-color: #ff6565;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat {
+    border: 2px solid white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-socials a img {
+    width: 24px;
+    margin-left: 15px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .services, .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-socials {
+        margin-top: 15px;
+    }
+}
